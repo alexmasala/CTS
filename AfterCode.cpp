@@ -22,6 +22,8 @@ public:
 		//this->putere = 0;
 		setPutere(0);
 		this->pret = 5000;
+		//initializare variabila numarInmatriculare
+		strcpy_s(this->numarInmatriculare, 5, "Zece");
 	}
 
 	Autoturism(string marca, string model, int putere)
