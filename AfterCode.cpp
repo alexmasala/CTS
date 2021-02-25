@@ -12,7 +12,8 @@ public:
 	string model;
 	int putere;
 	double pret;
-	char numarInmatriculare[9];
+	//modificare nume
+	char nrId[9];
 
 	//actualizam cu setter si getter
 	Autoturism()
@@ -24,7 +25,7 @@ public:
 		//this->pret = 5000;
 		setPret(5000);
 		//initializare variabila numarInmatriculare
-		strcpy_s(this->numarInmatriculare, 5, "Zece");
+		strcpy_s(this->nrId, 5, "Zece");
 	}
 
 	Autoturism(string marca, string model, int putere)
@@ -84,12 +85,12 @@ public:
 
 	void seteazaNumarInmatriculare(char numar[])
 	{
-		strcpy_s(this->numarInmatriculare, 9, numar);
+		strcpy_s(this->nrId, 9, numar);
 	}
 
 	char* obtineNumarInmatriculare()
 	{
-		return this->numarInmatriculare;
+		return this->nrId;
 		//return nullptr;
 	}
 };
