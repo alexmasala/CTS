@@ -162,8 +162,8 @@ double cea_mai_tare_din_parcare(Autoturism** vector, int nr_masini)
 			max = vector[i]->pret;
 		}
 	}
-	return max;
-	//return 0.0f;
+	return max;s
+	//am sters codul zombie
 }
 
 //10. Functia de mai jos primeste drept parametri o matrice
