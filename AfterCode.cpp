@@ -162,7 +162,7 @@ double cea_mai_tare_din_parcare(Autoturism** vector, int nr_masini)
 			max = vector[i]->pret;
 		}
 	}
-	return max;s
+	return max;
 	//am sters codul zombie
 }
 
@@ -343,4 +343,7 @@ int main()
 		}
 		cout << endl;
 	}
+
+	//codul acum se executa
+	cout << a1.getPutere();
 }
