@@ -21,7 +21,8 @@ public:
 		this->model = "Necunoscut";
 		//this->putere = 0;
 		setPutere(0);
-		this->pret = 5000;
+		//this->pret = 5000;
+		setPret(5000);
 		//initializare variabila numarInmatriculare
 		strcpy_s(this->numarInmatriculare, 5, "Zece");
 	}
@@ -40,17 +41,32 @@ public:
 	}
 
 	//facem getter pt variabila pret
-	int getPutere()
+	double getPutere()
 	{
 		return this->putere;
 	}
 
-	//facem setter pt variabila pret
-	void setPutere(int putere)
+	//facem setter pt variabila putere
+	void setPutere(double putere)
 	{
 		if (putere > 0)
 		{
 			this->putere = putere;
+		}
+	}
+
+	//facem getter pt variabila putere
+	int getPret()
+	{
+		return this->pret;
+	}
+
+	//facem setter pt variabila putere
+	void setPret(int pret)
+	{
+		if (pret > 2)
+		{
+			this->pret = pret;
 		}
 	}
 
@@ -299,9 +315,9 @@ int main()
 
 	//9.
 	Autoturism a11, a12, a13;
-	a11.pret = 200.5;
-	a12.pret = 200.7;
-	a13.pret = 154.5;
+	a11.setPret(200.5);
+	a12.setPret(200.7);
+	a13.setPret(154.5);
 	Autoturism** vector = new Autoturism * [3];
 	vector[0] = &a11; vector[1] = &a12; vector[2] = &a13;
 	double rezultat2 = cea_mai_tare_din_parcare(vector, 3);
