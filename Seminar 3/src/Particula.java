@@ -40,34 +40,6 @@ public class Particula extends Object {
                 '}';
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Particula)) return false;
-//        Particula particula = (Particula) o;
-//        return getX() == particula.getX() && getY() == particula.getY();
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(getX(), getY());
-//    }
-
-
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Particula)) return false;
-//        Particula particula = (Particula) o;
-//        return x == particula.x && y == particula.y;
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(x, y);
-//    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

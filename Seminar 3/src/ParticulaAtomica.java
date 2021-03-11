@@ -25,7 +25,6 @@ public class ParticulaAtomica extends Particula implements ParticulaMobila, Part
                 ", y=" + y +
                 ", denumire='" + denumire + '\'' +
                 '}';
-//        return "ParticulaAtomica{" + "denumire='" + denumire + '\'' + '}' + super.toString();
     }
 
     @Override
