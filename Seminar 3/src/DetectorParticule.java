@@ -1,6 +1,5 @@
 public class DetectorParticule {
-    Particula[] colectieParticule;
-    int nrParticule;
+
 
     public DetectorParticule(Particula[] colectieParticule, int nrParticule) {
         this.colectieParticule = colectieParticule;
@@ -19,6 +18,8 @@ public class DetectorParticule {
         return nrParticule;
     }
 
+    int nrParticule;
+
     public void setNrParticule(int nrParticule) {
         this.nrParticule = nrParticule;
     }
@@ -27,6 +28,7 @@ public class DetectorParticule {
 
     }
 
+    Particula[] colectieParticule;
     public Particula getParticula(int index) {
         if (index>=0 && index<colectieParticule.length) {
             return colectieParticule[index];
