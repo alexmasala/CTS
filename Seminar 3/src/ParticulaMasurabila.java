@@ -1,7 +1,7 @@
 public interface ParticulaMasurabila {
     public double distantaPanaLa(Particula p);
 
-    public static double distantaEuclidiana(Particula a, Particula b) {
+        public default double distantaEuclidiana(Particula a, Particula b) {
         int xDelta = a.getX() - b.getX();
         int yDelta = a.getY() - b.getY();
 
